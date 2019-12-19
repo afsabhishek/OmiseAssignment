@@ -1,0 +1,36 @@
+ext {
+  versions = [
+
+    sdk: [
+      buildTools: '28.0.3',
+      compile: 28,
+      min: 18,
+      target: 28
+    ],
+
+    app: [
+      crashlytics: '2.9.5',
+      dataBinding: platformVersions.gradle,
+      firebase: '16.0.1',
+      paging: '1.0.1',
+      retrofit: '2.4.0',
+      playservices: [
+        gms: '17.0.0',
+        phone: '17.1.0'
+      ],
+      support: [
+        compat: '27.1.+',
+        constraint: '1.1.2',
+        design: '27.1.+'
+      ]
+    ],
+
+    test: [
+      espresso: '3.0.2',
+      junit: '4.12',
+      kotlintest: '2.0.7',
+      pact: '3.5.14',
+      support: '1.0.2',
+    ]
+  ]
+}

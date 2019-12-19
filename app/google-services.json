@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "209265203195",
+    "firebase_url": "https://omisetest-fa86e.firebaseio.com",
+    "project_id": "omisetest-fa86e",
+    "storage_bucket": "omisetest-fa86e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209265203195:android:b9fb0b9f53ab2183cb1d5e",
+        "android_client_info": {
+          "package_name": "com.example.omisetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209265203195-3ml956dh2m4vjfdgie0q0n9qth929s2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI6Lzu9LEzWGrD-LOcWxJPH3_dz9YhMgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209265203195-3ml956dh2m4vjfdgie0q0n9qth929s2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

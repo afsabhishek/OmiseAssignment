@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">OmiseTest</string>
+    <string name="action.ok">Ok</string>
+    <string name="error.title">Uh oh!</string>
+    <string name="error.action.tryAgain">Try Again</string>
 </resources>

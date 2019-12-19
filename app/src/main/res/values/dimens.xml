@@ -1,0 +1,56 @@
+<resources>
+    <dimen name="placeholder.size">200dp</dimen>
+    <dimen name="raw.margin.xxxxl">60dp</dimen>
+    <dimen name="raw.margin.xxxl">48dp</dimen>
+    <dimen name="raw.margin.xxl">32dp</dimen>
+    <dimen name="raw.margin.xl">24dp</dimen>
+    <dimen name="raw.margin.m">20dp</dimen>
+    <dimen name="raw.margin">16dp</dimen>
+    <dimen name="raw.margin.sm">12dp</dimen>
+    <dimen name="raw.margin.s">10dp</dimen>
+    <dimen name="raw.margin.xs">8dp</dimen>
+    <dimen name="raw.margin.xxs">6dp</dimen>
+    <dimen name="raw.margin.xxxs">4dp</dimen>
+    <dimen name="raw.margin.xxxxs">2dp</dimen>
+
+    <dimen name="text_margin">@dimen/raw.margin</dimen>
+    <dimen name="button_margin">@dimen/raw.margin</dimen>
+    <dimen name="card_margin">@dimen/raw.margin</dimen>
+    <dimen name="card_margin_horizontal">12dp</dimen>
+
+    <dimen name="margin_horizontal">24dp</dimen>
+    <dimen name="margin.shadow">8dp</dimen>
+
+    <dimen name="raw.text.xxs">12sp</dimen>
+    <dimen name="raw.text.xs">14sp</dimen>
+    <dimen name="raw.text.s">16sp</dimen>
+    <dimen name="raw.text.m">18sp</dimen>
+    <dimen name="raw.text.l">20sp</dimen>
+    <dimen name="raw.text.xl">24sp</dimen>
+    <dimen name="raw.text.xxl">28sp</dimen>
+    <dimen name="raw.text.xxxl">32sp</dimen>
+
+
+    <dimen name="raw.elevation.none">1dp</dimen>
+    <dimen name="raw.elevation.s">2dp</dimen>
+    <dimen name="raw.elevation.m">4dp</dimen>
+    <dimen name="raw.elevation.l">8dp</dimen>
+    <dimen name="elevation.loginLogo">@dimen/raw.elevation.l</dimen>
+
+    <dimen name="raw.elevation.standard">@dimen/raw.elevation.m</dimen>
+
+
+    <dimen name="padding.xxxs">6dp</dimen>
+    <dimen name="padding.xxs">8dp</dimen>
+    <dimen name="padding.xs">12dp</dimen>
+    <dimen name="padding.s">16dp</dimen>
+    <dimen name="padding.m">18dp</dimen>
+    <dimen name="padding.l">20dp</dimen>
+    <dimen name="padding.xl">24dp</dimen>
+    <dimen name="padding.xxl">28dp</dimen>
+    <dimen name="padding.xxxl">32dp</dimen>
+    <dimen name="padding.xxxxl">36dp</dimen>
+
+    <dimen name="logo.minimum.Size">60dp</dimen>
+
+</resources>

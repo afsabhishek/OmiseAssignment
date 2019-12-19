@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="brand_blue">#00aeef</color>
+    <color name="brand_darkBlue">#00467f</color>
+    <color name="textDefault">@color/charcoal</color>
+    <color name="error">#b70303</color>
+    <color name="charcoal">#4c4c4c</color>
+    <color name="listBackground">#d2d2d2</color>
+    <color name="mediumGray">#d8d8d8</color>
 </resources>

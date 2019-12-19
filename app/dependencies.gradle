@@ -1,0 +1,25 @@
+apply from: './versions.gradle'
+
+dependencies {
+
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${platformVersions.kotlin}"
+
+  implementation "com.android.support:appcompat-v7:${versions.app.support.compat}"
+  implementation "com.android.support.constraint:constraint-layout:${versions.app.support.constraint}"
+  implementation "com.android.support:design:${versions.app.support.design}"
+  implementation "com.squareup.retrofit2:retrofit:${versions.app.retrofit}"
+  implementation "com.squareup.retrofit2:converter-gson:${versions.app.retrofit}"
+  implementation "android.arch.paging:runtime:${versions.app.paging}"
+
+  testImplementation "org.jetbrains.kotlin:kotlin-reflect:${platformVersions.kotlin}"
+  testImplementation "junit:junit:${versions.test.junit}"
+  testImplementation "io.kotlintest:kotlintest:${versions.test.kotlintest}"
+
+  androidTestImplementation "com.android.support.test:runner:${versions.test.support}"
+  androidTestImplementation "com.android.support.test:rules:${versions.test.support}"
+  androidTestImplementation "com.android.support.test.espresso:espresso-core:${versions.test.espresso}"
+  androidTestImplementation "com.android.support.test.espresso:espresso-contrib:${versions.test.espresso}", {
+    ['runner', 'rules'].each { exclude group: 'com.android.support.test', module: it }
+  }
+
+}
