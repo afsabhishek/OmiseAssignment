@@ -5,6 +5,7 @@ import android.support.constraint.ConstraintLayout
 import android.support.v4.widget.SwipeRefreshLayout
 import android.support.v7.widget.RecyclerView
 import android.view.View
+import android.widget.ProgressBar
 import com.example.omisetest.Configuration
 import com.example.omisetest.Response
 import com.example.omisetest.domain.CharityDetails
@@ -18,10 +19,11 @@ class CharityPresenter(
     private val emptyView: ConstraintLayout,
     private val refreshContainer: SwipeRefreshLayout,
     recyclerView: RecyclerView,
+    private var loader: ProgressBar,
     private var adapter: RecyclerViewListAdapter<CharityViewModel.CharityDetails>
 ) : RefreshableInteractor(context, refreshContainer) {
 
-    private val showCharityList = Configuration.deps.useCase.charity.getCharity
+    private val showCharityList = Configuration.deps.useCase.charity.charitiesList
 
     init {
         recyclerView.adapter = adapter
@@ -37,6 +39,7 @@ class CharityPresenter(
 
     private fun pushViewModel(vm: CharityViewModel) = ui {
         adapter.list = vm.data
+        loader.visibility = View.GONE
         when (adapter.list.isEmpty()) {
             false -> {
                 refreshContainer.visibility = View.VISIBLE

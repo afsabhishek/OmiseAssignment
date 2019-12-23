@@ -6,6 +6,7 @@ import com.example.omisetest.api.StorageConnector
 import com.example.omisetest.api.buildMyBank
 import com.example.omisetest.charity.business.DonationUseCase
 import com.example.omisetest.charity.business.GetCharitiesUseCase
+import com.example.omisetest.charity.business.GetSelectedCharityBrowseUseCase
 import com.example.omisetest.charity.business.SelectCharityBrowseUseCase
 import com.example.omisetest.domain.NavigationCache
 import com.example.omisetest.gateway.CharityProvider
@@ -51,9 +52,10 @@ object Configuration {
 
   private fun useCases(gateways: Gateways): UseCases {
     val charity = UseCaseCharity(
-      getCharity = GetCharitiesUseCase(gateways.charity),
+      charitiesList = GetCharitiesUseCase(gateways.charity),
       makeDonation = DonationUseCase(gateways.donation),
-      browseCharity = SelectCharityBrowseUseCase(getCache)
+      browseCharity = SelectCharityBrowseUseCase(getCache),
+      getBrowseCharity = GetSelectedCharityBrowseUseCase(getCache)
     )
 
     return UseCases(
@@ -72,9 +74,10 @@ object Configuration {
   )
 
   data class UseCaseCharity(
-    val getCharity: GetCharitiesUseCase,
+    val charitiesList: GetCharitiesUseCase,
     val makeDonation: DonationUseCase,
-    val browseCharity: SelectCharityBrowseUseCase
+    val browseCharity: SelectCharityBrowseUseCase,
+    val getBrowseCharity: GetSelectedCharityBrowseUseCase
   )
 
   data class Gateways(

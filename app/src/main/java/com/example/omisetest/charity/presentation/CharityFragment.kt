@@ -23,7 +23,7 @@ class CharityFragment : DataBindingFragment<FragmentCharityBinding>() {
     val onClick: (CharityViewModel.CharityDetails) -> Unit = { eventHandler.onClickCharity(it) }
 
     val adapter = RecyclerViewListAdapter(itemLayout, onClick)
-    presenter = CharityPresenter(activity!!, emptyView, swipeToRefresh, list, adapter)
+    presenter = CharityPresenter(activity!!, emptyView, swipeToRefresh, list, loader, adapter)
     binding.charityPresenter = presenter
   }
 }
