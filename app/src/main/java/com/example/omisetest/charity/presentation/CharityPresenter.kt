@@ -26,6 +26,7 @@ class CharityPresenter(
     init {
         recyclerView.adapter = adapter
         recyclerView.adapter.notifyDataSetChanged()
+        reloadData()
     }
 
     fun onRefresh() {

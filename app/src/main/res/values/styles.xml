@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
     <style name="AppTheme.TextErrorAppearance" parent="TextAppearance.Design.Error">
@@ -17,4 +18,96 @@
         <item name="android:textColor">@color/textDefault</item>
     </style>
 
+    <style name="regular">
+        <item name="android:fontFamily">@font/carto_gothic_std_book</item>
+    </style>
+
+    <style name="bold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/carto_gothic_std_bold</item>
+    </style>
+
+    <style name="title1" parent="bold">
+        <item name="android:textSize">@dimen/raw.text.xl</item>
+        <item name="android:textColor">@color/brand.darkBlue</item>
+    </style>
+
+    <style name="ErrorDialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:textColor">@color/textDefault</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:radius">9dp</item>
+        <item name="android:background">@drawable/rounded_white_background</item>
+    </style>
+
+    <style name="title2" parent="bold">
+        <item name="android:textSize">@dimen/raw.text.l</item>
+        <item name="android:textColor">@color/brand.darkBlue</item>
+    </style>
+
+    <style name="titleBlack" parent="bold">
+        <item name="android:textSize">@dimen/raw.text.m</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="body" parent="regular">
+        <item name="android:textSize">@dimen/raw.text.s</item>
+    </style>
+
+    <style name="titleGray" parent="body">
+        <item name="android:textSize">@dimen/raw.text.xs</item>
+        <item name="android:textColor">@color/textDefault</item>
+    </style>
+
+    <style name="scheduleTitleGray" parent="body">
+        <item name="android:textSize">@dimen/raw.text.l</item>
+        <item name="android:textColor">@color/textDefault</item>
+    </style>
+
+    <style name="scheduleBodyGray" parent="regular">
+        <item name="android:textSize">@dimen/raw.text.xs</item>
+        <item name="android:textColor">@color/textDefault</item>
+    </style>
+
+    <style name="regularMediumCharcoal" parent="regular">
+        <item name="android:textSize">@dimen/raw.text.m</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:textColorLink">@color/link.blue</item>
+    </style>
+
+    <style name="bodyBold" parent="bold">
+        <item name="android:textSize">@dimen/raw.text.s</item>
+    </style>
+
+    <style name="bodyRegular" parent="regular">
+        <item name="android:textSize">@dimen/raw.text.s</item>
+    </style>
+
+    <style name="bodySmall" parent="regular">
+        <item name="android:textSize">@dimen/raw.text.xs</item>
+    </style>
+
+    <style name="largeBodyBold" parent="bold">
+        <item name="android:textSize">@dimen/raw.text.m</item>
+    </style>
+
+    <style name="bodyBlack" parent="bodyRegular">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="bodySmallBlack" parent="bodySmall">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="bodySmallGrey" parent="bodySmall">
+        <item name="android:textColor">@color/greyText</item>
+    </style>
+    <style name="bodyBoldBlack" parent="bodyBold">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="bodyBoldBlackMedium" parent="bodyBoldBlack">
+        <item name="android:textSize">@dimen/raw.text.m</item>
+    </style>
+
+    <style name="largeBodyBoldBlack" parent="bodyBoldBlack">
+        <item name="android:textSize">@dimen/raw.text.l</item>
+    </style>
 </resources>

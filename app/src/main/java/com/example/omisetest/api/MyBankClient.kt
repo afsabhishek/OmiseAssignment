@@ -7,12 +7,12 @@ import retrofit2.http.POST
 
 interface MyBankClient {
 
-  @POST("/donations")
+  @POST("donations")
   fun createDonation(
     @Body body: PostDonationBffBody
   ): Call<PostDonationResponse>
 
-  @GET("/charities")
+  @GET("charities")
   fun fetchCharities(
   ): Call<GetCharitiesResponse>
 }

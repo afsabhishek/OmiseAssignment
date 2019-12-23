@@ -2,7 +2,7 @@ package com.example.omisetest.presentation
 
 import android.databinding.ViewDataBinding
 import android.support.v7.widget.RecyclerView
-import com.example.omisetest.presentation.BR
+import com.example.omisetest.BR
 
 typealias OnClick<T> = ((T) -> Unit)?
 

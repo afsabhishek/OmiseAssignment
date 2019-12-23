@@ -29,7 +29,6 @@ ext {
       espresso: '3.0.2',
       junit: '4.12',
       kotlintest: '2.0.7',
-      pact: '3.5.14',
       support: '1.0.2',
     ]
   ]

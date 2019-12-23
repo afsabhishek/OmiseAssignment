@@ -10,6 +10,8 @@ dependencies {
   implementation "com.squareup.retrofit2:retrofit:${versions.app.retrofit}"
   implementation "com.squareup.retrofit2:converter-gson:${versions.app.retrofit}"
   implementation "android.arch.paging:runtime:${versions.app.paging}"
+  implementation "com.google.firebase:firebase-core:${versions.app.firebase}"
+  implementation "com.crashlytics.sdk.android:crashlytics:${versions.app.crashlytics}"
 
   testImplementation "org.jetbrains.kotlin:kotlin-reflect:${platformVersions.kotlin}"
   testImplementation "junit:junit:${versions.test.junit}"

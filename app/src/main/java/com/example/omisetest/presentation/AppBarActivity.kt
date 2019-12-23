@@ -13,7 +13,7 @@ abstract class AppBarActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(activityLayout)
 
-    setSupportActionBar(toolbar)
+//    setSupportActionBar(toolbar)
     supportActionBar?.setDisplayHomeAsUpEnabled(true)
   }
 

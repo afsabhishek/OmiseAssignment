@@ -3,4 +3,8 @@
     <string name="action.ok">Ok</string>
     <string name="error.title">Uh oh!</string>
     <string name="error.action.tryAgain">Try Again</string>
+
+    <string name="content.charity.empty.title">No charity found</string>
+
+    <string name="charity.title">Charities</string>
 </resources>

@@ -1,15 +1,23 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
-    ext.kotlin_version = '1.3.41'
+    ext.platformVersions = [
+      gradle: '3.1.0',
+      kotlin: '1.2.51',
+      googleServices: '4.0.1',
+      crashlytics: '1.25.4'
+    ]
+
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://maven.fabric.io/public' }
     }
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.android.tools.build:gradle:${platformVersions.gradle}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${platformVersions.kotlin}"
+        classpath "com.google.gms:google-services:${platformVersions.googleServices}"
+        classpath "io.fabric.tools:gradle:${platformVersions.crashlytics}"
+
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -19,7 +27,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
     }
 }
 

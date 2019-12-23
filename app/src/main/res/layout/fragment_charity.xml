@@ -44,7 +44,7 @@
                 android:layout_margin="@dimen/padding.xxs"
                 android:elevation="@dimen/elevation.loginLogo"
                 android:background="@drawable/circular_back"
-                android:src="@drawable/ic_onboarding_schedule"
+                android:src="@drawable/ic_charity_empty"
                 android:padding="@dimen/padding.xxxl"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/padding.m"
                 android:gravity="center"
-                android:text="@string/content.schedule.empty.title"
+                android:text="@string/content.charity.empty.title"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/guideline_bottom" />
@@ -68,8 +68,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="gone"
-            app:onRefreshListener="@{() -> schedulePresenter.onRefresh()}"
-            tools:context=".pay.presentation.ViewSchedulePaymentFragment"
+            app:onRefreshListener="@{() -> charityPresenter.onRefresh()}"
+            tools:context=".charity.presentation.CharityFragment"
             tools:showIn="@layout/activity_charity">
 
             <android.support.v7.widget.RecyclerView
