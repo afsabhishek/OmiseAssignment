@@ -23,6 +23,8 @@
             </intent-filter>
         </activity>
         <activity
+            android:label="@string/donation.title"
+            android:theme="@style/AppTheme"
             android:name=".charity.presentation.DonationActivity">
         </activity>
     </application>

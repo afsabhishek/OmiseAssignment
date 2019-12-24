@@ -23,7 +23,7 @@
     <color name="offWhite">#f5f5f5</color>
     <color name="lightlightGray">#fafafa</color>
     <color name="white">@android:color/white</color>
-
+    <color name="translucentWhite">#80FFFFFF</color>
     //Text
     <color name="greyText">#727275</color>
 

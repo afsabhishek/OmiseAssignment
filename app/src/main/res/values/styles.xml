@@ -109,4 +109,10 @@
     <style name="largeBodyBoldBlack" parent="bodyBoldBlack">
         <item name="android:textSize">@dimen/raw.text.l</item>
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="android:textColorPrimary">@color/greyText</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
