@@ -101,6 +101,9 @@
     <style name="bodyBoldBlack" parent="bodyBold">
         <item name="android:textColor">@color/black</item>
     </style>
+    <style name="bodyBoldWhite" parent="bodyBold">
+        <item name="android:textColor">@color/white</item>
+    </style>
 
     <style name="bodyBoldBlackMedium" parent="bodyBoldBlack">
         <item name="android:textSize">@dimen/raw.text.m</item>

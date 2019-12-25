@@ -17,4 +17,5 @@
     <string name="hint_expired_date">EXPIRED DATE</string>
     <string name="hint_card_holder">CARD HOLDER</string>
     <string name="hint_cvv_code">CVV CODE</string>
+    <string name="error_card_details">Recheck your card details</string>
 </resources>

@@ -15,9 +15,10 @@ class DonationFragment : DataBindingFragment<FragmentDonationBinding>() {
   lateinit var eventHandler: DonationEventHandler
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    eventHandler = DonationEventHandler(activity!!, card_number, cvv_code, expired_date, card_holder)
+    eventHandler = DonationEventHandler(activity!!, card_number, cvv_code, expired_date, card_holder, amount, loader, donate_button)
     card_number.addTextChangedListener(eventHandler.cardNumberWatcher)
     card_holder.filters = arrayOf<InputFilter>(InputFilter.AllCaps())
     expired_date.addTextChangedListener(eventHandler.expiryWatcher)
+    binding.eventHandler = eventHandler
   }
 }
