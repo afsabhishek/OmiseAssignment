@@ -38,14 +38,12 @@ class DonationEventHandler(
     cardHolder.onDone {
       if (cardNumber.length() == 19 && (cvv.length() in 3..4) && expiryDate.length() == 5)
         amount.requestFocus()
-      else
-        errorDialogStyled(getString(R.string.error_card_details))
+      else errorDialogStyled(getString(R.string.error_card_details))
     }
     amount.onDone {
       if (amount.length() > 0 && BigDecimal(amount.text.toString()).compareTo(BigDecimal("0")) == 1) {
         hideSoftInput(amount)
-      } else
-        errorDialogStyled(getString(R.string.error_amount))
+      } else errorDialogStyled(getString(R.string.error_amount))
     }
   }
 
@@ -53,7 +51,7 @@ class DonationEventHandler(
 
   private fun donate() {
     if ((cardNumber.length() != 19 || cvv.length() < 3 || expiryDate.length() != 5) ||
-       (amount.length() == 0 || BigDecimal(amount.text.toString()).compareTo(BigDecimal("0")) != 1)) {
+      (amount.length() == 0 || BigDecimal(amount.text.toString()).compareTo(BigDecimal("0")) != 1)) {
       errorDialogStyled(getString(R.string.error_input_details))
       return
     }
@@ -81,9 +79,7 @@ class DonationEventHandler(
 
     override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
 
-    override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-
-    }
+    override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {}
 
     override fun afterTextChanged(s: Editable) {
       var pos = 0

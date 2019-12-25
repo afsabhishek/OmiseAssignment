@@ -8,6 +8,5 @@ import com.example.omisetest.gateway.DonationProvider
 class DonationUseCase(
   private val donationProvider: DonationProvider
 ) {
-
-  fun request(request: CreateDonationRequest): Response<Donations> =  donationProvider.request(request)
+  fun request(request: CreateDonationRequest): Response<Donations> = donationProvider.request(request)
 }

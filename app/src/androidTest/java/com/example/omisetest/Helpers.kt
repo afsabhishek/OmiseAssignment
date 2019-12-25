@@ -13,15 +13,17 @@ object Helpers {
     launchActivity: Boolean = true
   ): ActivityTestRule<A> =
     ActivityTestRule(A::class.java, initialTouchMode, launchActivity).apply {
-        charities()
+      charities()
     }
 
   private fun <T : Robot> withRobot(robot: T, func: T.() -> Unit) = robot.apply {
     isCorrectScreen()
     func()
   }
+
   //Charity
   fun charities() = Configuration.deps.useCase.charity.charitiesList.request()
+
   fun charity(func: CharitiesRobot.() -> Unit) = withRobot(CharitiesRobot(), func)
   //Donation
   fun donation(func: DonationRobot.() -> Unit) = withRobot(DonationRobot(), func)

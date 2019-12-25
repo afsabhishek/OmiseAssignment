@@ -39,7 +39,6 @@ abstract class Interactor(protected val context: Activity) {
     launch(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
   }
 
-
   protected fun <T : Activity> topTo(activity: KClass<T>, text: String, withFlags: Boolean) = bg {
     launch(Intent(context, activity.java).apply {
       addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -135,8 +134,6 @@ abstract class Interactor(protected val context: Activity) {
       is Response.Failure -> errorDialogStyled(response.message, DialogButtonAction(buttonText))
     }
   }
-
-
 
   protected fun onClick(view: View, func: () -> Unit) = View.OnClickListener { func() }.onClick(view)
 

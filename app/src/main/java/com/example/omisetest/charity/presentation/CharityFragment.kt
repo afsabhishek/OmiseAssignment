@@ -9,7 +9,6 @@ import com.example.omisetest.presentation.RecyclerViewListAdapter
 import com.example.omisetest.presentation.charity.presentation.CharityViewModel
 import kotlinx.android.synthetic.main.fragment_charity.*
 
-
 class CharityFragment : DataBindingFragment<FragmentCharityBinding>() {
 
   override val layoutId = R.layout.fragment_charity

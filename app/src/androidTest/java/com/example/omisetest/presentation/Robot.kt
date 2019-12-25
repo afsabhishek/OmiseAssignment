@@ -36,12 +36,15 @@ abstract class Robot {
     textIsDisplayed(title())
     permanentLabels().forEach { textIsDisplayed(it) }
   }
+
   protected fun iconIsDisplayed(resourceId: Int) {
     onView(withId(resourceId)).check(matches(isDisplayed()))
   }
+
   protected fun iconIsClickable(resourceId: Int) {
     onView(withId(resourceId)).check(matches(isClickable()))
   }
+
   protected fun textIsDisplayed(vararg texts: String) =
     texts.forEach { onView(withText(it)).check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE))) }
 
@@ -55,9 +58,10 @@ abstract class Robot {
     onView(withId(resourceId)).perform(click())
   }
 
-  protected fun tapText(text: String ) {
+  protected fun tapText(text: String) {
     onView(withText(text)).perform(click())
   }
+
   protected fun tapResourceID(resourceId: String) {
     onView(withResourceName(resourceId)).perform(click())
   }
@@ -96,14 +100,17 @@ abstract class Robot {
     onView(withId(recyclerViewId)).perform(
       RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(0, click()))
   }
+
   protected fun tapSecondItemRecylerView(recyclerViewId: Int) {
     onView(withId(recyclerViewId)).perform(
       RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(1, click()))
   }
+
   protected fun tapThirdItemRecylerView(recyclerViewId: Int) {
     onView(withId(recyclerViewId)).perform(
       RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(2, click()))
   }
+
   protected fun tapFourthItemRecylerView(recyclerViewId: Int) {
     onView(withId(recyclerViewId)).perform(
       RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(3, click()))
@@ -121,6 +128,7 @@ abstract class Robot {
   protected fun tapHome() {
     onView(withContentDescription("Navigate up")).perform(click())
   }
+
   fun handleConstraints(action: ViewAction, constraints: Matcher<View>): ViewAction {
     return object : ViewAction {
       override fun getConstraints(): Matcher<View> {
@@ -140,6 +148,7 @@ abstract class Robot {
   fun clickbutton(resourceId: Int) {
     onView(withId(resourceId)).perform(handleConstraints(click(), isDisplayingAtLeast(55)))
   }
+
   fun clickbuttonWithText(resourceText: String) {
     onView(withText(resourceText)).perform(handleConstraints(click(), isDisplayingAtLeast(55)))
   }

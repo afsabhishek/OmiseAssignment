@@ -18,5 +18,4 @@ open class CharityViewModel(
       Glide.with(view.context).load(logoUrl).into(view)
     }
   }
-
 }

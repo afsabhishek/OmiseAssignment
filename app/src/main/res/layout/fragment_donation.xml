@@ -184,7 +184,7 @@
                 android:layout_height="100dp"
                 android:text="Donate"
                 android:gravity="center"
-                android:onClick="@{eventHandler.onDonate}"
+                android:onClick="@{eventHandler::onDonate}"
                 android:src="@drawable/credit_card"
                 android:background="@drawable/circular_back"
                 app:layout_constraintLeft_toLeftOf="parent"

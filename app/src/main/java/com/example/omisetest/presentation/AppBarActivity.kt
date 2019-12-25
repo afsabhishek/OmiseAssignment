@@ -3,7 +3,6 @@ package com.example.omisetest.presentation
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.app_bar.toolbar
 
 abstract class AppBarActivity : AppCompatActivity() {
 
@@ -12,8 +11,6 @@ abstract class AppBarActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(activityLayout)
-
-//    setSupportActionBar(toolbar)
     supportActionBar?.setDisplayHomeAsUpEnabled(true)
   }
 

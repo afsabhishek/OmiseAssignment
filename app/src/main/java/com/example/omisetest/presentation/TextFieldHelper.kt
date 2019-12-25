@@ -7,7 +7,6 @@ import android.widget.EditText
 import android.widget.TextView
 import com.example.omisetest.R
 
-
 var TextInputLayout.text: String
   get() = editText?.text.toString()
   set(value) {
