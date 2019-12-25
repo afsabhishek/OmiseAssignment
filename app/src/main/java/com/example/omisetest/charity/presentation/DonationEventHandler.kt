@@ -37,18 +37,26 @@ class DonationEventHandler(
     charityViewModel = selectedCharity.request()
     cardHolder.onDone {
       if (cardNumber.length() == 19 && (cvv.length() in 3..4) && expiryDate.length() == 5)
-        amount.visibility = View.VISIBLE
+        amount.requestFocus()
       else
         errorDialogStyled(getString(R.string.error_card_details))
     }
     amount.onDone {
-      donateButton.visibility = View.VISIBLE
+      if (amount.length() > 0 && BigDecimal(amount.text.toString()).compareTo(BigDecimal("0")) == 1) {
+        hideSoftInput(amount)
+      } else
+        errorDialogStyled(getString(R.string.error_amount))
     }
   }
 
   fun onDonate(view: View) = onClick(view) { donate() }
 
   private fun donate() {
+    if ((cardNumber.length() != 19 || cvv.length() < 3 || expiryDate.length() != 5) ||
+       (amount.length() == 0 || BigDecimal(amount.text.toString()).compareTo(BigDecimal("0")) != 1)) {
+      errorDialogStyled(getString(R.string.error_input_details))
+      return
+    }
     loader.visibility = View.VISIBLE
     bg {
       val response = donateMoney.request(CreateDonationRequest(

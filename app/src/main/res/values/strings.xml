@@ -17,5 +17,7 @@
     <string name="hint_expired_date">EXPIRED DATE</string>
     <string name="hint_card_holder">CARD HOLDER</string>
     <string name="hint_cvv_code">CVV CODE</string>
-    <string name="error_card_details">Recheck your card details</string>
+    <string name="error_card_details">Check your card details</string>
+    <string name="error_input_details">Recheck your input details</string>
+    <string name="error_amount">Amount field cannot be blank</string>
 </resources>
