@@ -3,14 +3,14 @@
 This application is simple demonstration of an application requesting for list of charities and then on tapping on one of the list item will leads to Donation page where he/she can do the donation using card
 
 
-Architecture Used : Clean App Architecture by Uncle bob
+**Architecture Used >** Clean App Architecture by Uncle bob
 
-Language Used : Kotlin 
+**Language Used >** Kotlin 
 
-Platform Used : Android on Mac OS
+**Platform Used >** Android on Mac OS
 
 
-How to Build :
+### How to Build
 
 1. Take the clone and import in Android Studio
 2. Build the code and install the apk in Android device.
